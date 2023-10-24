@@ -18,9 +18,9 @@ class Course extends Model
     }
 
 // A course can belong to a user (instructor) who created it.
-    public function instructor(): BelongsTo
+    public function instructor()
     {
-        return $this->belongsTo(User::class, 'instructor_id');
+        return $this->belongsTo(Instructor::class, 'instructor_id');
     }
 
 }
