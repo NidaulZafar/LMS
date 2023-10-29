@@ -26,6 +26,7 @@ Route::get('/', function () {
     ]);
 });
 
+
 Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
 
 
